@@ -129,4 +129,180 @@ Module 2 : Datatype:
         output: 4398811728 4398811984. # Diffrent Memory 
 
 
+Module : 3
+-----------
+
+Type Casting :
+
+Type casting means converting one datatype into another datatype.
+
+x=10 
+x='10'
+
+    - Input comes as string 
+    - API gives string numbers 
+    - CSV filescontains text value 
+    - Databse return diffrent type 
+
+
+- Type of type casting 
+
+    - Implicit type casting 
+        - Python automatically converts smaller datatype ---> Larger datatype 
+
+        spark_count=100
+        avg=5.5 
+        result=spark_count*avg 
+
+
+    - Explicit type casting 
+        - You convert datatype using functions.
+
+        casting function 
+
+        - int() 
+        - float() 
+        - str()
+        - list()
+        - tuple()
+        - set()
+        - dict()
+        - bool()
+
+    x="100" # str 
+    y=int(x) # int 
+
+    price="99.9"
+    y=float(price)
+
+    age=30
+    text=str(age)
+
+    name="Hello"
+    print(list(name)) - ['h','e','l','l','o']
+
+
+    Boolean casting 
+    --------------
+
+    Value                           bool() result 
+
+    0                               False 
+    ""                              False 
+    []                              False 
+    {}                              False 
+    None                            False 
+    Anything                        True 
+
+    bool-->int---> float---> complex 
+
+
+    print(True+2.5) # 3.5
+
+    print(5+2.0) # float 
+
+    "10" +5 # Error 
+
+
+Module 4: Operator :
+
+Operator: Symbole used to perform operations on values (Operands)
+
+a=10
+b=5
+print(a+b)
+
+Types of operators :
+
+    - Aithmatic operator 
+        - operators             Meaning 
+            +                   Addition 
+            -                   Substraction 
+            *   
+            /                   Division 
+            //                  Floor Division # Divide two numbers . It removes the        decimal part rounding downward(towards negative infinity)
+
+            %                   Modulus # Return remainder after division 
+            **                  Power 
+
+        a=10 
+        b=3 
+        print(a+b)
+        print(a-b)
+        print(a*b)
+        print(a//b)
+        print(a%b)
+        print(a**b)
+    - Comparsion operator 
+        - operators             Meaning 
+            ==                  equal 
+            !=                  not equal
+            >                   Greter 
+            <                   Less
+            >=                  Greater equals 
+            <=                  Less Equals 
+
+            age=30 
+            print(age>18) # true 
+
+            if row_count>0
+                print("file loaded")
+
+    - Assingment opertor 
+
+        - x=10 Assign the value 
+
+        += 
+        -=
+        *=
+        /= 
+
+        x=10
+        x+=5
+        print(x)
+    - Logical Operator 
+
+        - Operator              Meaning 
+            and                 Both true 
+            or                  any true
+            not                  reverse 
+
+
+    - Bitwise operator 
+         Operator              Meaning 
+            &                   AND 
+            |                   or 
+                                XOR 
+            ~                   NOT 
+            <<                  Left shift
+            >>                  Rigjt shift 
+
+
+    - Membership operator 
+        Operator              Meaning 
+            in                  exists 
+            not in              not exists 
+
+            tech =["python","spark"]
+            print("python" in tech)
+
+
+
+    - Identity Operators 
+    Identity opertors are used to check whether two varibales refer to the same object in memeory, NOT whether thrie values are equal 
+
+         Operator              Meaning 
+            is                  same object # Both variables points to same memeory location
+            is not              diffrent object  # Variables points to diffrent memory location
+
+
+
+    Quick Comparision :
+                                            Use cases 
+        ==      Value Equality               Comapre data 
+        is      Memory identity             Compare identity 
+        is not  Diffrent object             Refrence validation 
+
+
+
     
